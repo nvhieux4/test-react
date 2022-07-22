@@ -1,0 +1,36 @@
+.box-membership {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+    border-radius: 20px;
+    width:326px ;
+    height:285px ;
+    margin: 78px 30px 0 34px;
+    padding: 112px 27px 112px 33px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #414D55;
+
+    &__text {
+        margin-top: 27px;
+        display: inline-block;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.group__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4D7CF3;
+}

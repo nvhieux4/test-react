@@ -1,0 +1,56 @@
+.group-input {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .input {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+        border-radius: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        width: 326px;
+        height: 48px;
+        border: none;
+        color: #C4C4C4;
+    
+        &--sub-phone {
+            color: #414D55;
+            position: absolute;
+            width: 70px;
+            left: 0;
+            transform: translate(50%, 0px);
+            height: 100%;
+            padding: 16px 0 15px 12px;
+            background: transparent;
+            text-align: center;
+            box-shadow: none;
+        }
+        &--phone {
+            padding: 16px 28px 15px 73px;
+            
+        }
+        &--code {
+            padding: 15px 63px 16px 38px;
+            &::placeholder {
+                color: #C4C4C4;
+                text-align: center;
+              }
+        }
+        &--info {
+            padding: 10px 31px 10px 29px;
+        }
+        &--w168 {
+            padding: 10px 39px 10px 31px;
+            width: 168px;
+            margin-right: 21px;
+        }
+        &--w119 {
+            padding: 10px 17px 10px 11px;
+            width: 119px;
+        }
+    }
+}
+
+

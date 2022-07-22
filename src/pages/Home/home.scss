@@ -1,5 +1,5 @@
 .home {
-  background-color: #4d7cf3;
+  background-color: var(--text-color-blue);
   padding: 20px;
   height: 100vh;
 
@@ -9,23 +9,15 @@
 
   &_text {
     &__title {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 19px;
       text-align: center;
       color: #fff;
-      display: block;
       height: 30px;
     }
     &__text {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 19px;
       text-align: center;
       color: #fff;
       padding: 1px 24px 0 35px;
       height: 49px;
-      display: inline-block;
     }
     &__sub {
       height: 30px;
@@ -33,14 +25,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 19px;
       color: #fff;
     }
-  }
-
-  &-button {
   }
 }

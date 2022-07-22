@@ -1,0 +1,31 @@
+.group-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    .button {
+        height: 40px;
+        min-width: 199px;
+        background: #ffffff;
+        color: var(--text-color-blue);
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 10px 0;
+        border: none;
+        font-family: "Rubik";
+    
+        &--border {
+            background: #FFFFFF;
+            box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+        }
+        &--membership {
+            padding: 10px 18px;
+        }
+    }
+
+    &--mt42 {
+        margin-top: 42px;
+    }
+   
+}

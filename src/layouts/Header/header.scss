@@ -1,6 +1,48 @@
 .header {
-  padding-right: 33px;
+  padding: 0 33px 0 37px;
   display: flex;
-  margin-top: 50px;
-  justify-content: flex-end;
+  margin-top: 42px;
+  justify-content:space-between;
+  align-items: center;
+
+  &__user {
+    display: flex;
+    align-items: center;
+    &__img {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 16px;
+    }
+    &__text {
+      color: #414D55;
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+
+    &__border {
+      padding: 10px;
+      border-radius: 50%;
+      border: 1px solid var(--text-color-blue);
+      margin-right: 25px;
+    }
+
+    &__noti {
+      position: relative;
+
+      &__bell {
+        padding: 3px;
+      }
+
+      &--active {
+        position: absolute;
+        top: 0;
+        right: 2px;
+      }
+    }
+  }
 }

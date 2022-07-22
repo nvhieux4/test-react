@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 $primary-font: "Tajawal", sans-serif;
 
 :root {
@@ -22,7 +24,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6rem;
   color: var(--text-color);
-  background-color: "current";
+  font-style: normal;
 }
 
 a {
@@ -54,15 +56,34 @@ ul {
   padding-left: 0;
 }
 
-.button {
-  height: 40px;
-  min-width: 199px;
-  background: #ffffff;
-  color: var(--text-color-blue);
-  border-radius: 20px;
+.fz-16 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+}
+
+
+.info__logo {
+    margin: 16px auto;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+.mt-49 {
+  margin-top: 49px;
+}
+
+.fw400 {
   font-weight: 400;
-  font-size: 14px;
-  padding: 10px 0;
-  border: none;
-  font-family: "Rubik";
+}
+.mt37 {
+  margin-top: 37px;
+}
+.group-two-input {
+  display: flex;
+  display: flex;
+    justify-content: center;
+    margin-top: 24px;
 }

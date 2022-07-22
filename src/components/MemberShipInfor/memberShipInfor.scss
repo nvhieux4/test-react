@@ -1,0 +1,45 @@
+.membership-info {
+    width:326px ;
+    height:171px ;
+    background: #FFFFFF;
+    border: 3px solid #414D55;
+    box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+    border-radius: 20px;
+    padding: 13px 26px 13px 34px;
+    margin: 0 auto;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #4D7CF3;
+        padding: 10px 0;
+
+        &__sar {
+            margin-left: 19px;
+            width: 54px;
+            text-align: end;
+        }
+    }
+
+    &__text {
+        &__sub {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #414D55;
+            margin-bottom: 4px;
+        }
+    }
+
+    &--background {
+        background-color: #E3EBFF;
+        border: none;
+    }
+
+}

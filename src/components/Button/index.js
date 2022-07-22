@@ -1,47 +1,21 @@
-import styles from "./button.module.scss";
-import classNames from "classnames/bind";
-import { Link } from "react-router-dom";
 
-const cx = classNames.bind(styles);
-
+import "./button.scss"
 function Button({
-  primary = false,
-  cancel = false,
   onClick,
   children,
-  disable,
-  ...passProps
+  border=false,
+  mt42=false,
+  membership=false
 }) {
-  let Comp = "button";
-  const props = {
-    onClick,
-    ...passProps,
-  };
 
-  if (disable) {
-    Object.keys(props).forEach((key) => {
-      if (key.startsWith("on") && typeof props[key] === "function") {
-        delete props[key];
-      }
-    });
-  }
-
-  const classes = "button";
   return (
-    <Comp className={classes} {...props}>
-      <span className={cx("children-text")}>{children}</span>
-    </Comp>
+    <div className={`group-button ${mt42 ? "group-button--mt42":""}`}>
+      <button className={`button ${border ? "button--border": ""} ${membership ? "button--membership": ""}`} onClick={onClick}>
+        {children}
+      </button>
+    </div>
   );
 }
 
-Button.propTypes = {
-  to: PropTypes.string,
-  primary: PropTypes.bool,
-  cancel: PropTypes.bool,
-  href: PropTypes.string,
-  onClick: PropTypes.func,
-  children: PropTypes.node,
-  disable: PropTypes.bool,
-};
 
 export default Button;
