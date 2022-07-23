@@ -41,14 +41,21 @@
         &--info {
             padding: 10px 31px 10px 29px;
         }
-        &--w168 {
+        &--w186 {
             padding: 10px 39px 10px 31px;
-            width: 168px;
+            width: 186px;
             margin-right: 21px;
+
+            &::placeholder {
+                text-align: center;
+            }
         }
         &--w119 {
             padding: 10px 17px 10px 11px;
             width: 119px;
+            &::placeholder {
+                text-align: center;
+            }
         }
     }
 }

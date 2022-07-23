@@ -1,8 +1,11 @@
 import "./memberShipInfor.scss"
+import { useContext } from "react";
+import { LangContext } from "../../utils/LangProvider";
 
 function MemberShipInfor({background=false}) {
+    const languages = useContext(LangContext);
     return (  
-    <div className={`membership-info ${background ? "membership-info--background" : ""} `}>
+    <div className={`membership-info ${background ? "membership-info--background" : ""} ${languages.laylout === "rtl" ? "rtl" : ""}`}>
     <div className="membership-info__text">
         <span className="membership-box__info__name">Platinum Membership</span>
         <div className="membership-info__info">

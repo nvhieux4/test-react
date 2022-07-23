@@ -9,7 +9,7 @@ function LangProvider({ children }) {
   const [languages, setLanguages] = useState(languageData.en);
   useEffect(() => {
     console.log(i18n.language);
-    if (i18n.language === "vi-VN") {
+    if (i18n.language === "vi-VN" || i18n.language === "en") {
       setLanguages(languageData.en);
     } else {
       setLanguages(languageData.ind);

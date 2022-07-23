@@ -13,14 +13,14 @@
     }
 
     &__text {
-        margin-top: 3px;
+        margin-top: 6px;
 
         &__sub {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            line-height: 20px;
+            line-height: 17px;
             margin-bottom: 9px;
             color: #414D55;
         }
@@ -29,15 +29,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
+        height: 17px;
 
         &__name {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
-            line-height: 20px;
+            line-height: 17px;
             color: #414D55;
+            min-width: 160px;
         }
         &__sar {
             font-family: 'Roboto';
@@ -46,6 +48,8 @@
             font-size: 16px;
             line-height: 20px;
             color: #4D7CF3;
+            width: 114px;
+            text-align: center;
         }
     }
     &--yellow {
@@ -55,7 +59,18 @@
 
     &--grey {
         margin-top: 17px;
-        margin-bottom: 17px;
+        margin-bottom: 10px;
         border-color: #C4C4C4;
     }
+}
+
+.rtl {
+    direction: rtl;
+    .membership-box__img {
+        margin-right: 0;
+        margin-left: 21px;
+    }
+}
+.rtl-text {
+    text-align: right;
 }

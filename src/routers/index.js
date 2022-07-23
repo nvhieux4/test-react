@@ -4,6 +4,7 @@ import Membership from "../pages/Membership";
 import ListMembership from "../pages/ListMemberShip";
 import MembershipDetail from "../pages/MembershipDetail";
 import MemberShipCart from "../pages/MemberShipCart"
+import MemberShipInfomation from "../pages/MemberShipInfomation";
 
 const ListRouter = [
   {
@@ -18,7 +19,6 @@ const ListRouter = [
     path: "/membership",
     component: Membership,
   },
-  ,
   {
     path: "/list-membership",
     component: ListMembership,
@@ -30,6 +30,10 @@ const ListRouter = [
   {
     path: "/membership-cart",
     component: MemberShipCart,
+  },
+  {
+    path: "/membership-infomation",
+    component: MemberShipInfomation,
   },
 ];
 

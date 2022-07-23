@@ -15,7 +15,8 @@ const languageData = {
     FullName:"Full Name",
     DateofBirth:"Date of Birth",
     MADA:"MADA",
-    APPLEPAY:"APPLE PAY"
+    APPLEPAY:"APPLE PAY",
+    laylout:"ltr"
 
   },
 
@@ -35,7 +36,8 @@ const languageData = {
     FullName:"الاسم الثلاثي",
     DateofBirth:"تاريخ الميلاد",
     MADA:"مدى",
-    APPLEPAY:"ابل باي"
+    APPLEPAY:"ابل باي",
+    laylout:"rtl"
   },
 };
 

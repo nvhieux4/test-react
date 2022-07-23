@@ -7,7 +7,8 @@ const images = {
   noti: require("./Notif.svg").default,
   add : require("./link.svg").default,
   membership: require("./Ellipse20.png"),
-  logo_cart: require("./1200px-Mada_Logo 1.png")
+  logo_cart: require("./1200px-Mada_Logo 1.png"),
+  footer: require("./759-7591817_golden-wave-tan 1.png")
 };
 
 export default images;

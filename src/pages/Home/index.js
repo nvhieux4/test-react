@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { LangContext } from "../../utils/LangProvider";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
+import { useEffect } from "react";
 import "./home.scss";
 
 
@@ -12,6 +13,11 @@ function Home() {
   const handleClick = () => {
     navigate("/info-step-1");
   };
+  useEffect(() => {
+    document.querySelector("body").style.backgroundColor = "#4d7cf3"
+    return ()=>{ document.querySelector("body").style.backgroundColor = "#ffffff"}
+});
+  
   return (
     <div className="home">
       <img src={images.logo_white} alt="logo" className="home__logo" />
